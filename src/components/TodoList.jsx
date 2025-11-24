@@ -69,7 +69,7 @@ function TodoList({ todos, Delete, onToggle, onEdit, onUpdate }) {
                             {/* 출력 목록 화면  */ }
                             const normalView = (
                                 <li key={item.id} id={item.id}>
-                                    <input
+                                    <input className="check-box"
                                         type="checkbox"
                                         checked={item.done}
                                         onChange={() => onToggle(item.id)} />
